@@ -1,0 +1,177 @@
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--gray-0);
+    padding: 0.5% ;
+}
+.headerContentOne {
+    padding: 0 8%;
+}
+.headerContentOne img{
+    width: 10vw;
+}
+.headerContentTwo {
+    padding: 0 8%;
+} 
+.headerContentTwo div {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.8% 0 2.8%;
+    width: 21.8vw;
+    height: 7vh;
+    background: var(--white);
+    border: 0.15vw solid var(--gray-20);
+    border-radius: 0.4vw;
+    box-sizing: border-box;
+}
+.headerContentTwoBorderSucess {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.8% 0 2.8%;
+    width: 21.8vw;
+    height: 7vh;
+    background: var(--white);
+    border: 0.15vw solid var(--gray-100);
+    border-radius: 0.4vw;
+    box-sizing: border-box;
+}
+.headerContentTwo  div input {
+    outline: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 12.6vw;
+    height: 5vh;
+    background: var( --transparent);
+    border: 0.15vw solid var( --transparent);
+    border-radius: 0.5vw;    
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    color: var(--gray-100);
+    box-sizing: border-box;
+}
+.headerContentTwo  div input::placeholder {
+    color: var(--gray-20);
+}
+.headerContentTwo  div button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 6vw;
+    height: 5.3vh;
+    background: var(--color-primary);
+    border: 0.15vw solid var(--color-primary);
+    border-radius: 0.5vw;    
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.0625rem;
+    color: var(--white);
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.headerContentTwo  div button:hover {
+    background: var(--color-primary-50);
+    border: 0.15vw solid var(--color-primary-50);
+} 
+@media only screen and (max-width:950px){
+    .headerContainer {
+        padding: 1% 0;
+    }
+    .headerContentOne {
+        padding: 0 4.5%;
+    }
+    .headerContentOne img{
+        width: 15vw;
+    }
+    .headerContentTwo {
+        padding: 0 4.5%;
+    } 
+    .headerContentTwo div {
+        padding: 0 2.8% 0 2.8%;
+        width: 31.8vw;
+        border: 0.2vw solid var(--gray-20);
+        border-radius: 1vw;
+    }
+    .headerContentTwoBorderSucess {
+        padding: 0 2.8% 0 2.8%;
+        width: 31.8vw;
+        border: 0.2vw solid var(--gray-100);
+        border-radius: 1vw;
+    }
+    .headerContentTwo  div input {
+        width: 17.6vw;
+        border: 0.2vw solid var( --transparent);
+        border-radius: 1vw;    
+    }
+    .headerContentTwo  div button {
+        width: 11vw;
+        border: 0.2vw solid var(--color-primary);
+        border-radius: 1vw;    
+    }
+    .headerContentTwo  div button:hover {
+        border: 0.2vw solid var(--color-primary-50);
+    } 
+}
+@media only screen and (max-width:600px){
+    .headerContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5% ;
+    }
+    .headerContentOne {
+        padding:  3.5% 0;
+    }
+    .headerContentOne img{
+        width: 39vw;
+    }
+    .headerContentTwo {
+        padding: 0;
+    } 
+    .headerContentTwo div {
+        width: 91.8vw;
+        height: 7vh;
+        border: 0.5vw solid var(--gray-20);
+        border-radius: 1.6vw;
+    }
+    .headerContentTwoBorderSucess {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2.8% 0 2.8%;
+        width: 21.8vw;
+        height: 7vh;
+        background: var(--white);
+        border: 0.15vw solid var(--gray-100);
+        border-radius: 0.4vw;
+        box-sizing: border-box;
+    }
+    .headerContentTwo  div input {
+        width: 52.6vw;
+        height: 5vh;
+        border: 0.5vw solid var( --transparent);
+        border-radius: 1.6vw;    
+        font-size: .875rem;
+        line-height: 1.0625rem;
+    }
+    .headerContentTwo  div button {
+        width: 30vw;
+        border: 0.5vw solid var(--color-primary);
+        border-radius: 1.6vw;    
+    }
+    .headerContentTwo  div button:hover {
+        background: var(--color-primary-50);
+        border: 0.5vw solid var(--color-primary-50);
+    } 
+}
