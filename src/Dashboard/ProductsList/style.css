@@ -2,6 +2,7 @@
     display: flex;
     width: 66.5%;
     padding: 1% 0% 1% 0%;
+    flex-direction: column;
 }
 .list {
     width: 100%;
@@ -62,8 +63,17 @@
         overflow-y: hidden;
         gap: 5.3%;
     }
+    .list::-webkit-scrollbar {
+        width: 0.01vw;
+      }
+    .list::-webkit-scrollbar-track {
+        background: var(--white);
+      }
+    .list::-webkit-scrollbar-thumb {
+        background: var(--white);
+      }
     .card {
-        width: 100vw;
+        min-width: 35vw;
         height: 50vh;
         border: 0.5vw solid var(--gray-20);
         border-radius: 1.6vw;
@@ -109,8 +119,17 @@
         overflow-y: hidden;
         gap: 5.3%;
     }
+    .list::-webkit-scrollbar {
+        width: 0.01vw;
+      }
+    .list::-webkit-scrollbar-track {
+        background: var(--white);
+      }
+    .list::-webkit-scrollbar-thumb {
+        background: var(--white);
+      }
     .card {
-        width: 100vw;
+        min-width: 81vw;
         height: 50vh;
         border: 0.5vw solid var(--gray-20);
         border-radius: 1.6vw;
