@@ -1,0 +1,148 @@
+.listContainer {
+    display: flex;
+    width: 66.5%;
+    padding: 1% 0% 1% 0%;
+}
+.list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.3%;
+}
+.card {
+    display: flex;
+    list-style: none;
+    box-sizing: border-box;
+    width: 18.5vw;
+    height: 43vh;
+    background: var(--white);
+    border: 0.15vw solid var(--gray-20);
+    border-radius: 0.4vw;
+    transition: 0.5s
+}
+.card:hover {
+    border: 0.15vw solid var(--gray-100);
+    cursor: pointer;
+}
+.resultSearch {
+    width: 100%;
+    height: min-content;
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 2.125rem;
+    color: var(--gray-100);
+}
+.resultSearch span{
+    font-weight: 700;
+    font-size: 1.625rem;
+    line-height: 2.125rem;
+    color: var(--gray-50);
+}
+.divEmptyProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divEmptyProduct img{
+    width: 50%;
+}
+.resultEmpty {
+    font-size: 1.25rem;
+}
+@media only screen and (max-width:950px){
+    .listContainer {
+        width: 100%;
+        padding: 4% 0% 1% 0%;
+    }
+    .list {
+        flex-wrap:nowrap;
+        overflow-y: hidden;
+        gap: 5.3%;
+    }
+    .card {
+        width: 100vw;
+        height: 50vh;
+        border: 0.5vw solid var(--gray-20);
+        border-radius: 1.6vw;
+    }
+    .card:hover {
+        border: 0.5vw solid var(--gray-100);
+        cursor: pointer;
+    }
+    .resultSearch {
+        width: 100%;
+        height: min-content;
+        font-weight: 700;
+        font-size: 1.625rem;
+        line-height: 2.125rem;
+        color: var(--gray-100);
+    }
+    .resultSearch span{
+        font-weight: 700;
+        font-size: 1.625rem;
+        line-height: 2.125rem;
+        color: var(--gray-50);
+    }
+    .divEmptyProduct {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .divEmptyProduct img{
+        width: 50%;
+    }
+    .resultEmpty {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width:600px){
+    .listContainer {
+        width: 100%;
+        padding: 4% 0% 1% 0%;
+    }
+    .list {
+        flex-wrap:nowrap;
+        overflow-y: hidden;
+        gap: 5.3%;
+    }
+    .card {
+        width: 100vw;
+        height: 50vh;
+        border: 0.5vw solid var(--gray-20);
+        border-radius: 1.6vw;
+    }
+    .card:hover {
+        border: 0.5vw solid var(--gray-100);
+        cursor: pointer;
+    }
+    .resultSearch {
+        width: 100%;
+        height: min-content;
+        font-weight: 700;
+        font-size: 1.625rem;
+        line-height: 2.125rem;
+        color: var(--gray-100);
+    }
+    .resultSearch span{
+        font-weight: 700;
+        font-size: 1.625rem;
+        line-height: 2.125rem;
+        color: var(--gray-50);
+    }
+    .divEmptyProduct {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .divEmptyProduct img{
+        width: 50%;
+    }
+    .resultEmpty {
+        font-size: 1.25rem;
+    }
+}
