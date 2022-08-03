@@ -5,7 +5,7 @@ function ProductsList({products, handleClick, filteredProducts,  inputValue}) {
 
     return (
         <section className="listContainer">
-            {inputValue.length > 0 ? (
+            {filteredProducts.length > 0 ? (
                 <>                
                 <h1 className="resultSearch">Resultados para: <span>{inputValue}</span></h1>
                 <ul className="list">
